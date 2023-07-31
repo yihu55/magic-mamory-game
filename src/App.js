@@ -51,6 +51,7 @@ function App() {
       }
     }
   }, [choiceOne, choiceTwo]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => shuffleCards(), [cardTitleSelected]);
   const resetTurn = () => {
     setChoiceOne(null);
